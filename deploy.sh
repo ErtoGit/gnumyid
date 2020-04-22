@@ -12,6 +12,6 @@ git push -u origin master && sleep 1
 printf "\n"
 echo ">> Deploying to Firebase.."
 firebase login
-firebase deploy
+firebase deploy --only hosting:gnumyid
 printf "\n"
 echo ">> ALL DONE."

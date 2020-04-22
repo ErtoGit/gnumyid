@@ -1,5 +1,5 @@
 ---
-title: 'CLI.my.id Docs'
+title: 'GNU.my.id Docs'
 date: 2020-02-01T15:14:39+08:00
 ---
 
