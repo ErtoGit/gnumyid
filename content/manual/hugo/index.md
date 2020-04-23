@@ -1,14 +1,17 @@
 ---
 title: 'Hugo'
-date: 2020-02-01T15:14:39+08:00
+date: 2020-04-23T18:10:00+08:00
 draft: false
 weight: 1
 summary: Manual untuk `hugo`.
 ---
 
+Hugo adalah sebuah static site generator yang menggunakan Golang sebagai bahasa pemrograman.
+
 # <a name="top"></a>Daftar Isi
 
 - [Install Hugo](#install-hugo)
+    - [Install Hugo Extended](#install-hugo-extended)
 - [Perintah umum](#perintah-umum)
     - [Membuat site baru](#perintah-membuat-site-baru)
     - [Local server](#perintah-local-server)
@@ -42,8 +45,34 @@ sudo dpkg -i hugo*_Linux-64bit.deb
 
 Konfirmasi apakah Hugo sudah terpasang lewat perintah ini.
 ```bash
-hugo --version
+hugo version
 ```
+
+### <a name="install-hugo-extended"></a>Install Hugo Extended
+
+Unduh versi terbaru Hugo dengan cara berikut.
+```bash
+curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest \
+ | grep  browser_download_url \
+ | grep Linux-64bit.deb \
+ | grep extended \
+ | cut -d '"' -f 4 \
+ | wget -i -
+```
+
+Kemudian jalankan perintah dibawah ini, untuk melakukan instalasi.
+
+```bash
+sudo dpkg -i hugo*_Linux-64bit.deb
+```
+
+Konfirmasi apakah Hugo sudah terpasang lewat perintah ini.
+```bash
+hugo version
+```
+
+[[Ke atas]](#top)
+
 
 ## <a name="perintah-umum"></a>Perintah umum
 

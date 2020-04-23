@@ -3,3 +3,4 @@
 .netlify
 public
 deploy.sh
+localhost.sh
